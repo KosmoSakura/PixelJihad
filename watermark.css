@@ -38,9 +38,7 @@ p {
 
 .dark {
     background-color: lightgray;
-    border-style: solid;
-    border-width: 1px;
-    border-color: dimgray;
+    border: 1px solid dimgray;
 }
 
 .sectionbody {
@@ -53,8 +51,9 @@ p {
     position: absolute;
     margin-top: -50px;
     margin-left: -50px;
-    background-color: dimgray;
-    color: lightgray;
+    outline: #851a1e double thick;
+    background-image: url('../main/img/bg_texture.png');
+    color: #851a1e;
     padding: 20px;
     font-size: 20px;
 }
@@ -94,5 +93,5 @@ p {
 
 #output[src] {
     margin-bottom: 1em;
-    box-shadow: 0px 0.5em 1em rgba(0,0,0,0.5);
+    box-shadow: 0px 0.5em 1em rgba(0, 0, 0, 0.5);
 }

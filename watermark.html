@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>盲水印</title>
+    <link rel="shortcut icon" href="../main/img/main.ico"/>
+    <meta name="description" content="盲水印工具">
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <link href='watermark.css' type='text/css' rel='stylesheet'/>
+    <script src='sjcl.js' type='text/javascript'></script>
+    <script src='watermark.js' type='text/javascript'></script>
+</head>
+<body style="background: url(../main/img/bg_zero.jpg) no-repeat center center fixed;">
+<a href="https://github.com/oakes/PixelJihad">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+         src="../main/img/ic_src.png"
+         alt="Fork me on GitHub"></a>
+<h1 style="color: #851a1e;">盲水印</h1>
+<div id='main' class='section dark'>
+    <div class='step'>选择一张图片</div>
+    <img id='preview' class='preview hide'/>
+    <div class='sectionbody'>
+        <input type='file' id='file'/>
+    </div>
+</div>
+<div id='choose' class='section dark hide'>
+    <div class='step'>写入水印</div>
+    <div class='sectionbody'>
+        <div class='left'>
+                <textarea id='message' class='message' maxlength='1000'
+                          placeholder='输入隐藏的消息'></textarea>
+            <input type='password' id='password' class='password'
+                   placeholder='输入水印密码（可选）'/>
+            <button id='encode' class='submit'>写入水印</button>
+        </div>
+        <div class='right'>
+            <input type='password' id='password2' class='password'
+                   placeholder='输入水印密码（没有空着）'/>
+            <button id='decode' class='submit'>解密盲水印</button>
+        </div>
+    </div>
+</div>
+<div id='reveal' class='section dark hide'>
+    <div class='step'>水印信息</div>
+    <div id='messageDecoded' class='sectionbody'></div>
+</div>
+<canvas id='canvas' class='hide'></canvas>
+<img id='output'/>
+</body>
+</html>
