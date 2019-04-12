@@ -52,7 +52,7 @@ p {
     margin-top: -50px;
     margin-left: -50px;
     outline: #851a1e double thick;
-    background-image: url('../main/img/bg_texture.png');
+    background-image: url('./img/bg_texture.png');
     color: #851a1e;
     padding: 20px;
     font-size: 20px;
